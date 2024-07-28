@@ -1,0 +1,13 @@
+name: Send request every 2 minutes
+
+on:
+  schedule:
+    - cron: "*/2 * * * *"
+
+jobs:
+  send_request:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Send request to Dietwell
+        run: curl -X GET https://dietwell-5gr8.onrender.com/
