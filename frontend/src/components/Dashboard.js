@@ -71,7 +71,7 @@ const Dashboard = () => {
       const categoryDetails = async () => {
         const token = localStorage.getItem('token')
         const response = await fetch(
-          `https://dietwell-wt6b.onrender.com/${category}`,
+          `https://dietwell-wt6b.onrender.com/admin/${category}`,
           {
             method: "POST",
             headers: {
