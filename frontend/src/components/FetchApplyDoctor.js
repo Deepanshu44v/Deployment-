@@ -12,7 +12,7 @@ const FetchApplyDoctor = () => {
     try {
       const token = sessionStorage.getItem("token");
       const response = await fetch(`https://dietwell-wt6b.onrender.com/data/${pending}`, {
-        method: "POST",
+        method: "GET",
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
