@@ -9,7 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Send request to Dietwell
+      - name: Send first request to Dietwell
         run: |
-          response=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-5gr8.onrender.com/)
-          echo "Response: $response"
+          response1=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-5gr8.onrender.com/)
+          echo "First Response: $response1"
+
+      - name: Send second request to Dietwell
+        run: |
+          response2=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-wt6b.onrender.com/)
+          echo "Second Response: $response2"
