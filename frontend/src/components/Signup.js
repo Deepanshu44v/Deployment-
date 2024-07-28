@@ -24,7 +24,7 @@ const Signup = () => {
   const [ContactNo, setContactno] = useState(0);
   const [confirmPassword, setConfirmPassward] = useState("");
   const [Passward, setPassward] = useState("");
-  const [Role, setRole] = useState("");
+  const [Role, setRole] = useState("user");
   // const [error, setError] = useState(false);
   // const [errorMessage,setErrorMessage] = useState(false);
   // declaring usestate variable
@@ -141,24 +141,24 @@ const Signup = () => {
                 required
               />
             </div>
-            <div className="my-2 flex justify-center">
-              <label
-                className="block text-white w-1/2 text-sm font-bold mb-2"
-                htmlFor="email"
-              >
-                Role
-              </label>
-              <input
-                className="shadow appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                id="Role"
-                type="text"
-                placeholder="Role"
-                name="Role"
-                value={Role}
-                onChange={(e) => setRole(e.target.value)}
-                required
-              />
-            </div>
+            // <div className="my-2 flex justify-center">
+            //   <label
+            //     className="block text-white w-1/2 text-sm font-bold mb-2"
+            //     htmlFor="email"
+            //   >
+            //     Role
+            //   </label>
+            //   <input
+            //     className="shadow appearance-none border rounded  py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            //     id="Role"
+            //     type="text"
+            //     placeholder="Role"
+            //     name="Role"
+            //     value={Role}
+            //     onChange={(e) => setRole(e.target.value)}
+            //     required
+            //   />
+            // </div>
             <div className="my-2 flex justify-center">
               <label
                 className="block text-white w-1/2 text-sm font-bold mb-2"
