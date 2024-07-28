@@ -11,7 +11,7 @@ const FetchApplyDoctor = () => {
   const fetchApplications = async () => {
     try {
       const token = sessionStorage.getItem("token");
-      const response = await fetch(`https://dietwell-wt6b.onrender.com/admin/${pending}`, {
+      const response = await fetch(`https://dietwell-wt6b.onrender.com/data/${pending}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
