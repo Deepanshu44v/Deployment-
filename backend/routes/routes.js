@@ -66,7 +66,7 @@ router.patch("/approvedoctor", ApproveDoctor);
 router.post("/searchuseremail", searchuseremail);
 
 router.get("/selected/:selectedOption", FetchQueries); //done
-router.post("/:catagory", category);
+router.post("/admin/:catagory", category);
 router.delete("/delete/:todelete", toDelete);
 router.patch("/id/:id", MarkasSolved); //done
 router.get("/data/:data", FetchApplyDoctor); //done
