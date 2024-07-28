@@ -11,5 +11,5 @@ jobs:
     steps:
       - name: Send request to Dietwell
         run: |
-          response=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-wt6b.onrender.com/)
+          response=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-5gr8.onrender.com/)
           echo "Response: $response"
