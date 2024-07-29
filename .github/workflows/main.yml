@@ -11,10 +11,10 @@ jobs:
     steps:
       - name: Send first request to Dietwell
         run: |
-          response1=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-5gr8.onrender.com/)
+          response1=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-5gr8.onrender.com/ )
           echo "First Response: $response1"
 
       - name: Send second request to Dietwell
         run: |
-          response2=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-wt6b.onrender.com/)
+          response2=$(curl -X GET -s -o /dev/null -w "%{http_code}" https://dietwell-wt6b.onrender.com/ )
           echo "Second Response: $response2"
